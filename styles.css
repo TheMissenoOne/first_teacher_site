@@ -54,10 +54,11 @@
         }
 
     main { 
+    /*  A fewchanges can be made to avoid responsivity issues on mobile */
     max-width: 1000px;
-    width: 90%;
-    margin: 40px auto;
-    display: grid;
+    width: 90%; /* avoid using width as percentages when not really necessary*/
+    margin: 40px auto; /* In this case you want to add spacing to push everything to the inside so padding would be more appropriate. Margin will only push away, not compress or create spacing to the inside. */
+    display: grid; /* Display grid is not actually being used here*/
     gap: 30px;
     }
 
@@ -146,6 +147,8 @@
         to { transform: translateY(0);
             opacity: 1;}
              }
+
+/* Try using classes a bit more so css is more intuitive */
 
    
         
